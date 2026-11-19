@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhinchu English Boarding School (CEBS) &amp; CEBS Montessori | Nursery–12, Chhinchu, Surkhet</title>
+    <meta name="description" content="Chhinchu English Boarding School (CEBS) & CEBS Montessori, Bheriganga-12, Chhinchu, Surkhet — Estd. 2042 B.S. (1985 A.D.), Ministry of Education Best School in Karnali Province (2074 B.S.). Nursery to Grade 12 (+2 Science, Management, Law, Education).">
+
+    <!-- Premium Font Pairing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Standalone Theme Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==========================================================
+         1. TOP UTILITY BAR
+         ========================================================== -->
+    <div class="top-bar">
+        <div class="top-bar-info">
+            <span><i class="fa-solid fa-map-location-dot"></i> Bheriganga-12, Chhinchu, Surkhet, Karnali</span>
+            <a href="tel:+97783540234"><i class="fa-solid fa-phone"></i> +977 83-540234</a>
+            <a href="mailto:chhinchuschool@gmail.com"><i class="fa-solid fa-envelope"></i> chhinchuschool@gmail.com</a>
+        </div>
+        <div class="top-bar-links">
+            <a href="https://www.facebook.com/236360872903494" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-shapes"></i> CEBS Montessori</a>
+            <a href="https://www.facebook.com/CEBSNepal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i> Facebook (4.5K+)</a>
+            <button type="button" id="lang-toggle" class="lang-pill" title="Switch headline subtitle language">नेपाली / EN</button>
+            <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark or Light Mode" title="Toggle Dark / Light Mode">
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ==========================================================
+         2. STICKY HEADER & NAVIGATION
+         ========================================================== -->
+    <header class="header" id="header">
+        <a href="#home" class="logo" aria-label="Chhinchu English Boarding School Home">
+            <!-- Bespoke Double-Ring CEBS Crest -->
+            <svg class="crest-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CEBS School Crest">
+                <defs>
+                    <path id="crestTopArc" d="M 19,82 A 45,45 0 1,1 101,82" />
+                    <path id="crestBottomArc" d="M 17,89 A 52,52 0 0,0 103,89" />
+                </defs>
+                <circle cx="60" cy="60" r="57" fill="#0A192F" stroke="#C5A059" stroke-width="2.5"/>
+                <circle cx="60" cy="60" r="32" fill="#FFFFFF" stroke="#C5A059" stroke-width="1.8"/>
+                <circle cx="60" cy="60" r="28" fill="none" stroke="#7A1022" stroke-width="0.9" stroke-dasharray="2 2"/>
+
+                <text fill="#FFFFFF" font-family="Poppins, sans-serif" font-size="8.4" font-weight="700" letter-spacing="0.85">
+                    <textPath href="#crestTopArc" startOffset="50%" text-anchor="middle">CHHINCHU ENGLISH SCHOOL</textPath>
+                </text>
+                <text fill="#E8D3A2" font-family="Poppins, sans-serif" font-size="7.2" font-weight="700" letter-spacing="1.0">
+                    <textPath href="#crestBottomArc" startOffset="50%" text-anchor="middle">ESTD. 2042 B.S. • SURKHET</textPath>
+                </text>
+
+                <!-- Karnali Mountain Horizon + Open Book Center Emblem -->
+                <path d="M41 53 L52 40 L61 49 L68 42 L79 53 Z" fill="#C5A059" opacity="0.35"/>
+                <path d="M60 51 C53 50, 45 52, 42 55 L42 74 C46 71, 53 70, 60 73 M60 51 C67 50, 75 52, 78 55 L78 74 C74 71, 67 70, 60 73 M60 51 L60 73" fill="none" stroke="#0A192F" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="60" cy="37" r="3" fill="#7A1022"/>
+            </svg>
+            <div class="logo-text">
+                <h1>Chhinchu English Boarding School</h1>
+                <span data-en="CEBS MONTESSORI &bull; NURSERY–12, SURKHET" data-np="छिन्चु इङ्लिस बोर्डिङ स्कुल • नर्सरी–१२">CEBS MONTESSORI &bull; NURSERY–12, SURKHET</span>
+            </div>
+        </a>
+
+        <ul class="nav-links" id="desktop-nav">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#montessori-wing">Montessori</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#news">Notices</a></li>
+            <li><a href="#result-checker">Results</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+            <button type="button" class="btn-premium header-cta js-open-admission">Inquire Now</button>
+            <button type="button" class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+        <div>
+            <div class="mobile-drawer-header">
+                <h3>CEBS Chhinchu</h3>
+                <button type="button" class="drawer-close" id="drawer-close" aria-label="Close Menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About CEBS &amp; Montessori</a></li>
+                <li><a href="#legacy">40+ Years Heritage</a></li>
+                <li><a href="#programs">Nursery–12 &amp; +2 Streams</a></li>
+                <li><a href="#news">School Notices &amp; Events</a></li>
+                <li><a href="#result-checker">SEE &amp; +2 Result Checker</a></li>
+                <li><a href="#gallery">Campus &amp; Labs Gallery</a></li>
+                <li><a href="#contact">Contact &amp; Hostel Info</a></li>
+            </ul>
+        </div>
+        <div>
+            <button type="button" class="btn-premium btn-solid js-open-admission" style="width: 100%; margin-bottom: 14px;">Admission Inquiry 2083</button>
+            <p style="font-size: 0.82rem; color: rgba(255,255,255,0.75);"><i class="fa-solid fa-phone" style="color: var(--color-gold); margin-right: 6px;"></i> +977 83-540234 &bull; Bheriganga-12</p>
+        </div>
+    </nav>
+
+    <!-- ==========================================================
+         4. HERO SLIDER
+         ========================================================== -->
+    <section class="hero" id="home">
+        <!-- Slide 1: Scenic Surkhet Campus -->
+        <div class="hero-slide active">
+            <div class="hero-bg" style="background-image: url('images/hero-cebs-campus.jpg');"></div>
+            <div class="hero-content">
+                <div class="hero-eyebrow"><i class="fa-solid fa-trophy"></i> Estd. 2042 B.S. (1985) &bull; Best School in Karnali Province (2074 B.S.)</div>
+                <h2 data-en="Inspiring Excellence from <span>Montessori</span> to <span>Grade 12</span>" data-np="<span>मोन्टेसरी</span>देखि <span>कक्षा १२</span> सम्म गुणस्तरीय शिक्षाको अग्रणी केन्द्र">Inspiring Excellence from <span>Montessori</span> to <span>Grade 12</span></h2>
+                <p>Serving Bheriganga Municipality-12, Chhinchu, Surkhet and families across Karnali Province with English-medium schooling, residential boarding, and +2 Science, Management, Law &amp; Education streams.</p>
+                <div class="hero-btns">
+                    <a href="#programs" class="btn-premium btn-solid">Explore Programs <i class="fa-solid fa-arrow-right"></i></a>
+                    <button type="button" class="btn-premium btn-hero-outline js-open-admission">Apply for Admission</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: CEBS Montessori Wing -->
+        <div class="hero-slide">
+            <div class="hero-bg" style="background-image: url('images/cebs-montessori.jpg');"></div>
+            <div class="hero-content">
+                <div class="hero-eyebrow"><i class="fa-solid fa-shapes"></i> CEBS Montessori &bull; Early Childhood Wing</div>
+                <h2>Joyful Foundations at <span>CEBS Montessori</span></h2>
+                <p>Nurturing curiosity, confidence, and foundational literacy through tactile Montessori materials, guided sensory activities, and caring early-childhood educators in Chhinchu.</p>
+                <div class="hero-btns">
+                    <a href="#montessori-wing" class="btn-premium btn-solid">Discover CEBS Montessori <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://www.facebook.com/236360872903494" target="_blank" rel="noopener noreferrer" class="btn-premium btn-hero-outline"><i class="fa-brands fa-facebook-f"></i> Montessori Page</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: +2 Higher Secondary Wing -->
+        <div class="hero-slide">
+            <div class="hero-bg" style="background-image: url('images/cebs-science-lab.jpg');"></div>
+            <div class="hero-content">
+                <div class="hero-eyebrow"><i class="fa-solid fa-flask-vial"></i> NEB Affiliated +2 College &bull; Chhinchu, Surkhet</div>
+                <h2>Four Distinct <span>+2 Streams</span><br>Under One Campus</h2>
+                <p>Advance your career path after SEE with well-equipped laboratories, seminar halls, and experienced subject faculty in <strong>Science, Management, Law, and Education</strong>.</p>
+                <div class="hero-btns">
+                    <a href="#programs" class="btn-premium btn-solid">View +2 Streams <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#result-checker" class="btn-premium btn-hero-outline">Check Results</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button type="button" class="hero-nav-btn hero-prev" id="hero-prev" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button type="button" class="hero-nav-btn hero-next" id="hero-next" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="hero-dots" id="hero-dots" aria-label="Slide pagination">
+            <button type="button" class="hero-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+            <button type="button" class="hero-dot" data-slide="1" aria-label="Go to slide 2"></button>
+            <button type="button" class="hero-dot" data-slide="2" aria-label="Go to slide 3"></button>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         5. FLOATING ACTION CARDS (OVERLAPPING HERO)
+         ========================================================== -->
+    <div class="floating-cards">
+        <div class="action-card reveal-up">
+            <i class="fa-solid fa-shapes action-card-icon"></i>
+            <h3>CEBS Montessori</h3>
+            <p>Dedicated pre-primary Montessori environment (Nursery – UKG) building joyful curiosity, social skills, and bilingual readiness.</p>
+            <a href="#montessori-wing">Explore Early Years <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="action-card reveal-up" style="transition-delay: 0.14s;">
+            <i class="fa-solid fa-graduation-cap action-card-icon"></i>
+            <h3>Grade 1–12 &amp; +2 Streams</h3>
+            <p>Full English-medium schooling up to SEE plus NEB +2 programs in Science, Management, Law, and Education.</p>
+            <a href="#programs">Browse All Streams <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="action-card reveal-up" style="transition-delay: 0.28s;">
+            <i class="fa-solid fa-bed action-card-icon"></i>
+            <h3>Residential Boarding</h3>
+            <p>Structured, caring hostel &amp; boarding facilities welcoming scholars from across Surkhet and neighboring Karnali districts.</p>
+            <a href="#news" class="js-open-notice" data-notice-id="2">Hostel &amp; Admissions <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- ==========================================================
+         3. MARQUEE LATEST UPDATES TICKER
+         ========================================================== -->
+    <div class="news-ticker" role="region" aria-label="Latest School Updates">
+        <div class="ticker-label"><i class="fa-solid fa-bullhorn"></i> LATEST UPDATES</div>
+        <div class="ticker-wrap">
+            <div class="ticker-move">
+                <span><strong>ADMISSIONS OPEN:</strong> <a href="#news" class="js-open-notice" data-notice-id="0">Nursery to Grade 12 &amp; +2 (Science, Management, Law, Education) — Apply at Chhinchu Campus</a></span>
+                <span><strong>CEBS MONTESSORI:</strong> <a href="#montessori-wing">Playgroup, Nursery, LKG &amp; UKG enrollment open with tactile activity rooms</a></span>
+                <span><strong>PROVINCIAL HONOR:</strong> <a href="#legacy">Ministry of Education Award — Recognized as Best School in Karnali Province (2074 B.S.)</a></span>
+                <span><strong>HOSTEL FACILITY:</strong> <a href="#news" class="js-open-notice" data-notice-id="2">Supervised boarding seats available for students from remote districts of Karnali</a></span>
+                <!-- Seamless duplicate track -->
+                <span><strong>ADMISSIONS OPEN:</strong> <a href="#news" class="js-open-notice" data-notice-id="0">Nursery to Grade 12 &amp; +2 (Science, Management, Law, Education) — Apply at Chhinchu Campus</a></span>
+                <span><strong>CEBS MONTESSORI:</strong> <a href="#montessori-wing">Playgroup, Nursery, LKG &amp; UKG enrollment open with tactile activity rooms</a></span>
+                <span><strong>PROVINCIAL HONOR:</strong> <a href="#legacy">Ministry of Education Award — Recognized as Best School in Karnali Province (2074 B.S.)</a></span>
+                <span><strong>HOSTEL FACILITY:</strong> <a href="#news" class="js-open-notice" data-notice-id="2">Supervised boarding seats available for students from remote districts of Karnali</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================
+         6. ABOUT CEBS & CEBS MONTESSORI SPLIT
+         ========================================================== -->
+    <section class="section-padding bg-white" id="about">
+        <div class="container">
+            <div class="about-section">
+                <div class="about-image reveal-left">
+                    <div class="image-wrapper">
+                        <img src="images/cebs-sports-awards.jpg" alt="CEBS Chhinchu students and faculty celebrating academic and sports achievements">
+                    </div>
+                    <div class="about-badge">
+                        <h3>40+ Yrs</h3>
+                        <p>Estd. 2042 B.S.<br>Karnali's Pride</p>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <div class="section-header">
+                        <span class="nepali-text">About Institution &bull; छिन्चु इङ्लिस बोर्डिङ स्कुल</span>
+                        <h2>A Leading Academic Pillar of Karnali Province.</h2>
+                    </div>
+                    <p class="lead">"Rooted in discipline, holistic growth, and English-medium excellence since 2042 B.S. (1985 A.D.)."</p>
+                    <p>Located at <strong>Bheriganga Municipality-12, Chhinchu, Surkhet</strong>, <strong>Chhinchu English Boarding School (CEBS)</strong> has nurtured generations of doctors, engineers, legal professionals, managers, and educators across Karnali Province under the leadership of Principal <strong>Purushotam Timalsena</strong>.</p>
+                    <p>Recognized by the Ministry of Education as the <strong>Best School in Karnali Province (2074 B.S.)</strong>, CEBS offers an uninterrupted academic pathway from <strong>CEBS Montessori (Nursery–UKG)</strong> through SEE and <strong>+2 Science, Management, Law, and Education</strong>.</p>
+
+                    <ul class="about-highlights">
+                        <li><i class="fa-solid fa-check-double"></i> Nursery to Grade 12 Unified Campus</li>
+                        <li><i class="fa-solid fa-check-double"></i> +2 Science, Management, Law &amp; Education</li>
+                        <li><i class="fa-solid fa-check-double"></i> Safe Residential Boarding / Hostel</li>
+                        <li><i class="fa-solid fa-check-double"></i> MoE Karnali Best School Award (2074 B.S.)</li>
+                    </ul>
+
+                    <a href="#legacy" class="btn-premium">Explore Our Heritage <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Dedicated CEBS Montessori Spotlight -->
+            <div class="montessori-split reveal-up" id="montessori-wing">
+                <div class="montessori-content">
+                    <div class="montessori-tag"><i class="fa-solid fa-child-reaching"></i> Dedicated Early Childhood Wing</div>
+                    <h3>CEBS Montessori &amp; Pre-Primary</h3>
+                    <p>Designed around Montessori hands-on learning principles, our early years wing welcomes Playgroup, Nursery, LKG, and UKG learners into bright, sunlit classrooms equipped with wooden sensorial materials, literacy trays, and caring educators.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                        <button type="button" class="btn-premium btn-solid js-open-admission">Enroll in Montessori</button>
+                        <a href="https://www.facebook.com/236360872903494" target="_blank" rel="noopener noreferrer" class="btn-premium"><i class="fa-brands fa-facebook-f"></i> Visit CEBS Montessori Page</a>
+                    </div>
+                </div>
+                <div class="montessori-media">
+                    <img src="images/cebs-montessori.jpg" alt="CEBS Montessori classroom with children and pink tower tactile blocks">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         7. HERITAGE & MILESTONES TIMELINE
+         ========================================================== -->
+    <section class="section-padding bg-light" id="legacy">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span>Four Decades of Educational Impact</span>
+                <h2>The CEBS Journey in Surkhet</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2042 B.S. (1985 A.D.)</div>
+                        <h4>Foundation in Chhinchu, Surkhet</h4>
+                        <p>Established to bring disciplined, quality English-medium education to Bheriganga and rural communities across western Nepal.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Early Years &amp; Boarding Growth</div>
+                        <h4>CEBS Montessori &amp; Hostel Expansion</h4>
+                        <p>Launched child-centric Montessori classrooms alongside safe boarding residences for students arriving from neighboring Karnali districts.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2074 B.S. (2017/2018 A.D.)</div>
+                        <h4>Best School in Karnali Province</h4>
+                        <p>Honored at Rastriya Sabha Griha by the Ministry of Education (MoE) as the Best School in Karnali Province for academic &amp; SEE excellence.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Present Day &bull; Nursery–12</div>
+                        <h4>+2 Streams: Science, Management, Law &amp; Education</h4>
+                        <p>Expanded into a full Nursery–12 institution preparing scholars across four distinct NEB +2 faculties backed by modern science &amp; IT labs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         8. CORE PILLARS (ANIMATED SHIMMER & ICON MORPH CARDS)
+         ========================================================== -->
+    <section class="section-padding bg-white" id="pillars">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span>Why Families Choose CEBS</span>
+                <h2>Core Pillars of Excellence</h2>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-card reveal-up">
+                    <div class="pillar-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>Award-Winning Academics</h3>
+                    <p>Recognized by the Ministry of Education as Karnali's Best School (2074 B.S.), maintaining consistent SEE distinctions and NEB +2 board merit.</p>
+                </div>
+
+                <div class="pillar-card reveal-up" style="transition-delay: 0.14s;">
+                    <div class="pillar-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <h3>Modern Labs &amp; IT Wing</h3>
+                    <p>Dedicated Physics, Chemistry, and Biology laboratories paired with an upgraded computer lab and comprehensive reference library.</p>
+                </div>
+
+                <div class="pillar-card reveal-up" style="transition-delay: 0.28s;">
+                    <div class="pillar-icon"><i class="fa-solid fa-house-user"></i></div>
+                    <h3>Safe Residential Boarding</h3>
+                    <p>Home-away-from-home hostel care with supervised evening study hours, nutritious meals, and holistic mentorship for Karnali students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         9. ACADEMIC PROGRAMS (NURSERY–12 & +2 STREAMS + FILTER)
+         ========================================================== -->
+    <section class="section-padding bg-light" id="programs">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span>Comprehensive Academic Pathway (Nursery – Grade 12)</span>
+                <h2>School Levels &amp; +2 Streams</h2>
+                <p class="section-sub">Filter by division to explore our Montessori early childhood classes, SEE secondary schooling, and all four NEB +2 streams.</p>
+            </div>
+
+            <div class="program-filters reveal-up" role="tablist" aria-label="Filter academic programs">
+                <button type="button" class="filter-pill active" data-program-filter="all">All Programs (6)</button>
+                <button type="button" class="filter-pill" data-program-filter="school">CEBS Montessori &amp; School (N–10)</button>
+                <button type="button" class="filter-pill" data-program-filter="plus2">+2 Higher Secondary (11–12)</button>
+            </div>
+
+            <div class="academics-grid">
+                <!-- 1. CEBS Montessori -->
+                <div class="academic-card reveal-scale" data-level="school">
+                    <img src="images/cebs-montessori.jpg" alt="CEBS Montessori early childhood classroom">
+                    <div class="academic-content">
+                        <span class="academic-tag">Pre-Primary &bull; Playgroup – UKG</span>
+                        <h3>CEBS Montessori</h3>
+                        <p>Sensory-based early learning nurturing phonics, numeracy, fine motor habits, and joyful confidence.</p>
+                        <span class="stream-subjects"><i class="fa-solid fa-book-open" style="color: var(--color-gold);"></i> Activity Zones &bull; Story Circle &bull; Sensory Play</span>
+                        <button type="button" class="btn-premium btn-hero-outline js-open-admission" data-preset="CEBS Montessori (Nursery–UKG)">Enroll Child</button>
+                    </div>
+                </div>
+
+                <!-- 2. Basic & Secondary SEE -->
+                <div class="academic-card reveal-scale" data-level="school" style="transition-delay: 0.08s;">
+                    <img src="images/cebs-it-lab.jpg" alt="CEBS Secondary IT and computer practical class">
+                    <div class="academic-content">
+                        <span class="academic-tag">Grades 1 – 10 &bull; SEE Level</span>
+                        <h3>School &amp; SEE Wing</h3>
+                        <p>Strong English-medium foundation with Computer Science, practical labs, debate, sports, and disciplined SEE coaching.</p>
+                        <span class="stream-subjects"><i class="fa-solid fa-laptop-code" style="color: var(--color-gold);"></i> English Medium &bull; IT Lab &bull; Boarding Option</span>
+                        <button type="button" class="btn-premium btn-hero-outline js-open-admission" data-preset="Secondary / SEE (Grades 6–10)">Inquire Grade 1–10</button>
+                    </div>
+                </div>
+
+                <!-- 3. +2 Science -->
+                <div class="academic-card reveal-scale" data-level="plus2" style="transition-delay: 0.16s;">
+                    <img src="images/cebs-science-lab.jpg" alt="CEBS +2 Science chemistry and biology lab">
+                    <div class="academic-content">
+                        <span class="academic-tag">NEB Grade 11 &amp; 12 &bull; +2 Stream</span>
+                        <h3>+2 Science</h3>
+                        <p>Rigorous laboratory and theoretical preparation for Engineering, MBBS, Pharmacy, Forestry, and IT pathways.</p>
+                        <span class="stream-subjects"><i class="fa-solid fa-atom" style="color: var(--color-gold);"></i> Physics &bull; Chemistry &bull; Biology / Math / CS</span>
+                        <button type="button" class="btn-premium btn-hero-outline js-open-admission" data-preset="+2 Science">Apply +2 Science</button>
+                    </div>
+                </div>
+
+                <!-- 4. +2 Management -->
+                <div class="academic-card reveal-scale" data-level="plus2" style="transition-delay: 0.22s;">
+                    <img src="images/cebs-library-seminar.jpg" alt="CEBS +2 Management seminar and reference library">
+                    <div class="academic-content">
+                        <span class="academic-tag">NEB Grade 11 &amp; 12 &bull; +2 Stream</span>
+                        <h3>+2 Management</h3>
+                        <p>Career-oriented business education building quantitative finance, accounting, hospitality, and IT management skills.</p>
+                        <span class="stream-subjects"><i class="fa-solid fa-chart-line" style="color: var(--color-gold);"></i> Accountancy &bull; Economics &bull; Business &bull; CS</span>
+                        <button type="button" class="btn-premium btn-hero-outline js-open-admission" data-preset="+2 Management">Apply +2 Management</button>
+                    </div>
+                </div>
+
+                <!-- 5. +2 Law -->
+                <div class="academic-card reveal-scale" data-level="plus2" style="transition-delay: 0.28s;">
+                    <img src="images/hero-cebs-campus.jpg" alt="CEBS Chhinchu campus academic building for +2 Law">
+                    <div class="academic-content">
+                        <span class="academic-tag">NEB Grade 11 &amp; 12 &bull; +2 Stream</span>
+                        <h3>+2 Law</h3>
+                        <p>Structured legal studies preparing future advocates, civil service aspirants, and B.A. LL.B. entrance scholars in Karnali.</p>
+                        <span class="stream-subjects"><i class="fa-solid fa-scale-balanced" style="color: var(--color-gold);"></i> Constitutional Law &bull; Jurisprudence &bull; Legal Drafting</span>
+                        <button type="button" class="btn-premium btn-hero-outline js-open-admission" data-preset="+2 Law">Apply +2 Law</button>
+                    </div>
+                </div>
+
+                <!-- 6. +2 Education -->
+                <div class="academic-card reveal-scale" data-level="plus2" style="transition-delay: 0.34s;">
+                    <img src="images/cebs-sports-awards.jpg" alt="CEBS faculty and students in +2 Education and campus community">
+                    <div class="academic-content">
+                        <span class="academic-tag">NEB Grade 11 &amp; 12 &bull; +2 Stream</span>
+                        <h3>+2 Education</h3>
+                        <p>Foundational pedagogy, child psychology, and teaching leadership inspiring the next generation of community educators.</p>
+                        <span class="stream-subjects"><i class="fa-solid fa-chalkboard-user" style="color: var(--color-gold);"></i> Pedagogy &bull; Educational Psychology &bull; Electives</span>
+                        <button type="button" class="btn-premium btn-hero-outline js-open-admission" data-preset="+2 Education">Apply +2 Education</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         10. VIRTUAL CAMPUS & HOSTEL OVERVIEW (PARALLAX)
+         ========================================================== -->
+    <section class="virtual-tour">
+        <div class="container reveal-up">
+            <button type="button" class="play-btn" id="open-tour-modal" aria-label="Open CEBS Campus & Hostel Overview">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <h2>Explore Our Chhinchu Campus &amp; Hostel</h2>
+            <p>Located at the gateway of Surkhet in Bheriganga Municipality-12, Chhinchu — discover our Montessori block, science &amp; IT labs, sports courtyard, and residential boarding environment.</p>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         11. NOTICE BOARD, EVENTS & RESULT CHECKER
+         ========================================================== -->
+    <section class="section-padding bg-light" id="news">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span>Campus Announcements &amp; Academic Portal</span>
+                <h2>Notices, Events &amp; Results</h2>
+            </div>
+
+            <div class="notice-container">
+                <!-- Notices Column -->
+                <div class="notice-col reveal-left">
+                    <h3><i class="fa-solid fa-bullhorn"></i> Official Notices</h3>
+
+                    <div class="list-item js-open-notice" data-notice-id="0" tabindex="0" role="button">
+                        <div class="list-date">
+                            <span>02</span>
+                            <small>Baisakh</small>
+                        </div>
+                        <div class="list-info">
+                            <h4>Admissions Open: Nursery–10 &amp; +2 Streams (2083 BS)</h4>
+                            <p>Admission forms open for CEBS Montessori, Basic/Secondary, and +2 Science, Management, Law &amp; Education.</p>
+                            <span class="notice-badge">Read Notice</span>
+                        </div>
+                    </div>
+
+                    <div class="list-item js-open-notice" data-notice-id="1" tabindex="0" role="button">
+                        <div class="list-date">
+                            <span>18</span>
+                            <small>Ashadh</small>
+                        </div>
+                        <div class="list-info">
+                            <h4>+2 Scholarship &amp; Entrance Orientation Notice</h4>
+                            <p>SEE merit scholarships available across Science, Management, Law, and Education streams at Chhinchu campus.</p>
+                            <span class="notice-badge">Read Notice</span>
+                        </div>
+                    </div>
+
+                    <div class="list-item js-open-notice" data-notice-id="2" tabindex="0" role="button">
+                        <div class="list-date">
+                            <span>25</span>
+                            <small>Chaitra</small>
+                        </div>
+                        <div class="list-info">
+                            <h4>Boarding / Hostel Seat Registration for Karnali Scholars</h4>
+                            <p>Out-of-district students seeking supervised hostel accommodation may submit hostel registration along with admission.</p>
+                            <span class="notice-badge">Read Notice</span>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn-premium js-open-admission" style="margin-top: 10px; font-size: 0.85rem; padding: 10px 24px;">Request Admission Form</button>
+                </div>
+
+                <!-- Events Column -->
+                <div class="notice-col reveal-right">
+                    <h3><i class="fa-regular fa-calendar-check"></i> School Calendar &amp; Activities</h3>
+
+                    <div class="list-item">
+                        <div class="list-date" style="border-color: var(--color-crimson);">
+                            <span>10</span>
+                            <small>Baisakh</small>
+                        </div>
+                        <div class="list-info">
+                            <h4>CEBS Montessori Welcome &amp; Playgroup Orientation</h4>
+                            <p><i class="fa-regular fa-clock" style="color: var(--color-gold);"></i> 9:30 AM &bull; CEBS Montessori Wing, Chhinchu</p>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="list-date" style="border-color: var(--color-crimson);">
+                            <span>22</span>
+                            <small>Ashadh</small>
+                        </div>
+                        <div class="list-info">
+                            <h4>+2 Bridge Course &amp; Lab Induction (Science / Law / Mgmt)</h4>
+                            <p><i class="fa-regular fa-clock" style="color: var(--color-gold);"></i> 7:30 AM &bull; Senior Secondary Block</p>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="list-date" style="border-color: var(--color-crimson);">
+                            <span>14</span>
+                            <small>Bhadra</small>
+                        </div>
+                        <div class="list-info">
+                            <h4>Inter-House Quiz, Debate &amp; Legal Moot Session</h4>
+                            <p><i class="fa-regular fa-clock" style="color: var(--color-gold);"></i> 1:00 PM &bull; CEBS Seminar Hall</p>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="list-date" style="border-color: var(--color-crimson);">
+                            <span>05</span>
+                            <small>Magh</small>
+                        </div>
+                        <div class="list-info">
+                            <h4>Annual Sports Week &amp; Academic Excellence Awards</h4>
+                            <p><i class="fa-regular fa-clock" style="color: var(--color-gold);"></i> 10:00 AM &bull; Chhinchu Campus Courtyard</p>
+                        </div>
+                    </div>
+
+                    <a href="https://www.facebook.com/CEBSNepal" target="_blank" rel="noopener noreferrer" class="btn-premium" style="margin-top: 10px; font-size: 0.85rem; padding: 10px 24px;"><i class="fa-brands fa-facebook-f"></i> Live Updates on Facebook</a>
+                </div>
+            </div>
+
+            <!-- SEE / +2 / TERMINAL RESULT CHECKER -->
+            <div class="reveal-up" id="result-checker" style="padding-top: 25px;">
+                <div class="section-header" style="margin-bottom: 36px;">
+                    <span>Student Result Portal (Demo)</span>
+                    <h2>Check Academic Result</h2>
+                </div>
+
+                <div class="result-checker-card">
+                    <form id="result-checker-form">
+                        <div class="result-form-grid">
+                            <div class="form-group">
+                                <label for="symbol_number">Symbol / Roll Number <span style="color: var(--color-crimson);">*</span></label>
+                                <input type="text" id="symbol_number" name="symbol_number" placeholder="e.g. CEBS-10-104" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date of Birth (BS) <span style="color: var(--color-crimson);">*</span></label>
+                                <input type="text" id="dob" name="dob" placeholder="YYYY-MM-DD (e.g. 2067-08-14)" required>
+                            </div>
+                            <div class="form-group full">
+                                <label for="batch">Class / +2 Stream</label>
+                                <select id="batch" name="batch">
+                                    <option value="see-10">Grade 10 — Pre-SEE Terminal Examination</option>
+                                    <option value="plus2-sci">+2 Science — Grade 12 Assessment</option>
+                                    <option value="plus2-law">+2 Law / Management — Grade 11 Assessment</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-premium btn-solid" style="width: 100%; margin-top: 6px;">
+                            <i class="fa-solid fa-magnifying-glass"></i> View Result Sheet
+                        </button>
+
+                        <div class="sample-hint">
+                            <span>Demo quick-fill:</span>
+                            <button type="button" class="sample-chip js-fill-result" data-sym="CEBS-10-104" data-dob="2067-08-14" data-batch="see-10">CEBS-10-104 (SEE GPA 3.85)</button>
+                            <button type="button" class="sample-chip js-fill-result" data-sym="CEBS-12S-018" data-dob="2065-03-21" data-batch="plus2-sci">CEBS-12S-018 (+2 Science)</button>
+                            <button type="button" class="sample-chip js-fill-result" data-sym="CEBS-11L-009" data-dob="2066-11-05" data-batch="plus2-law">CEBS-11L-009 (+2 Law)</button>
+                        </div>
+                    </form>
+
+                    <div id="result-output" class="result-output" aria-live="polite"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         12. STATISTICAL COUNTERS
+         ========================================================== -->
+    <section class="section-padding bg-dark" style="padding: 80px 6%;">
+        <div class="container stats-grid reveal-up">
+            <div class="stat-item">
+                <h3 class="counter" data-target="40" data-suffix="+">0</h3>
+                <p>Years Legacy (Since 2042 B.S.)</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="15" data-suffix=" Levels">0</h3>
+                <p>Montessori to Grade 12</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="4" data-suffix=" Streams">0</h3>
+                <p>+2 Science, Mgmt, Law &amp; Edu</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="2074" data-suffix=" B.S.">0</h3>
+                <p>MoE Karnali Best School Award</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         13. FILTERABLE CAMPUS & LAB GALLERY WITH LIGHTBOX
+         ========================================================== -->
+    <section class="section-padding bg-white" id="gallery">
+        <div class="container reveal-up">
+            <div class="section-header">
+                <span>Moments Across Our Surkhet Campus</span>
+                <h2>Campus &amp; Activities Gallery</h2>
+            </div>
+
+            <div class="program-filters" role="tablist" aria-label="Filter gallery photos">
+                <button type="button" class="filter-pill active" data-gallery-filter="all">All Photos</button>
+                <button type="button" class="filter-pill" data-gallery-filter="campus">Campus &amp; Montessori</button>
+                <button type="button" class="filter-pill" data-gallery-filter="labs">Science &amp; IT Labs</button>
+                <button type="button" class="filter-pill" data-gallery-filter="life">Library &amp; Sports</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large" data-category="campus" data-caption="CEBS Chhinchu Main Campus — Academic Building & Courtyard against the Karnali Hills">
+                    <img src="images/hero-cebs-campus.jpg" alt="Chhinchu English Boarding School main campus in Surkhet">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Chhinchu Campus Courtyard</span>
+                        <small>Bheriganga-12, Surkhet</small>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="campus" data-caption="CEBS Montessori — Hands-on Pink Tower & Sensorial Early Learning">
+                    <img src="images/cebs-montessori.jpg" alt="CEBS Montessori children learning with wooden blocks">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>CEBS Montessori Wing</span>
+                        <small>Playgroup – UKG</small>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="labs" data-caption="+2 Science Chemistry & Biology Laboratory Practicals">
+                    <img src="images/cebs-science-lab.jpg" alt="CEBS +2 Science students in chemistry lab">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>+2 Science Laboratory</span>
+                        <small>Physics, Chem &amp; Bio</small>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="labs" data-caption="Secondary & +2 Computer Science and Digital Lab">
+                    <img src="images/cebs-it-lab.jpg" alt="CEBS computer and IT lab session">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Computer &amp; IT Lab</span>
+                        <small>Practical Computing</small>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="life" data-caption="+2 Management, Law & Education Reference Library & Seminar Hall">
+                    <img src="images/cebs-library-seminar.jpg" alt="CEBS students studying Management, Law and Education in library">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Library &amp; Seminar Hall</span>
+                        <small>Management, Law &amp; Edu</small>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="life" data-caption="Annual Sports Meet & Karnali Academic Award Pride">
+                    <img src="images/cebs-sports-awards.jpg" alt="CEBS students with house sports trophies">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Sports &amp; House Trophies</span>
+                        <small>ECA &amp; Athletics</small>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="campus" data-caption="Evening Study & Boarding Mentorship for Students Across Karnali">
+                    <img src="images/cebs-library-seminar.jpg" alt="Residential study and group mentoring">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Scholar Study Groups</span>
+                        <small>Boarding Mentorship</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         14. LEADERSHIP & COMMUNITY VOICES (TESTIMONIALS)
+         ========================================================== -->
+    <section class="section-padding bg-light" id="testimonials">
+        <div class="container reveal-up">
+            <div class="section-header">
+                <span>Leadership &amp; School Community</span>
+                <h2>Message &amp; Reflections</h2>
+            </div>
+
+            <div class="testimonial-box">
+                <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+
+                <div class="testimonial-slide active">
+                    <p class="test-text">Since 2042 B.S., our mission at Chhinchu English Boarding School has been to bring national-standard education right to Karnali Province — from joyful Montessori beginnings to specialized +2 Science, Management, Law, and Education pathways.</p>
+                    <div class="test-author">
+                        <h5>Purushotam Timalsena</h5>
+                        <span>Principal &bull; Chhinchu English Boarding School</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <p class="test-text">At CEBS Montessori, every child learns through exploration, warm guidance, and tactile discovery — preparing happy, confident learners ready for primary school.</p>
+                    <div class="test-author">
+                        <h5>CEBS Montessori Team</h5>
+                        <span>Pre-Primary Wing &bull; Bheriganga-12, Chhinchu</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <p class="test-text">Having safe boarding facilities alongside dedicated Science, Law, and Management classes in Chhinchu gives students across Surkhet and hill districts a true launchpad for national careers.</p>
+                    <div class="test-author">
+                        <h5>+2 Faculty &amp; Boarding Parents</h5>
+                        <span>Karnali Community Voice (Demo)</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-controls" aria-label="Testimonial Navigation">
+                    <button type="button" class="testimonial-dot active" data-t="0" aria-label="Quote 1"></button>
+                    <button type="button" class="testimonial-dot" data-t="1" aria-label="Quote 2"></button>
+                    <button type="button" class="testimonial-dot" data-t="2" aria-label="Quote 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         15. ADMISSION CTA BANNER
+         ========================================================== -->
+    <section class="cta-section" id="admissions">
+        <div class="cta-content reveal-up">
+            <h2>Admissions Open: Montessori to Grade 12</h2>
+            <p>Join Karnali Province's Ministry-of-Education recognized school at Bheriganga Municipality-12, Chhinchu, Surkhet. Hostel &amp; day-scholar seats open for Nursery–10 and +2 Science, Management, Law &amp; Education.</p>
+            <div class="cta-actions">
+                <button type="button" class="btn-premium btn-white js-open-admission">Apply / Inquire Online <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="tel:+97783540234" class="btn-premium btn-hero-outline"><i class="fa-solid fa-phone"></i> Call +977 83-540234</a>
+                <a href="https://www.facebook.com/CEBSNepal" target="_blank" rel="noopener noreferrer" class="btn-premium btn-hero-outline"><i class="fa-brands fa-facebook-f"></i> Message on Facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         16. MEGA FOOTER
+         ========================================================== -->
+    <footer class="footer" id="contact">
+        <div class="footer-grid container">
+            <!-- Column 1 -->
+            <div class="footer-brand footer-col">
+                <h2>Chhinchu English Boarding School</h2>
+                <p class="nepali-text" style="color: var(--color-gold-light); margin-bottom: 10px;">छिन्चु इङ्लिस बोर्डिङ स्कुल (CEBS) &bull; Estd. 2042 B.S.</p>
+                <p>Nursery–12 English-medium school, CEBS Montessori wing, and NEB +2 institution (Science, Management, Law, Education) serving Surkhet &amp; Karnali Province.</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/CEBSNepal" target="_blank" rel="noopener noreferrer" aria-label="CEBS Official Facebook Page" title="Chhinchu English Boarding School on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/236360872903494" target="_blank" rel="noopener noreferrer" aria-label="CEBS Montessori Facebook Page" title="CEBS Montessori on Facebook"><i class="fa-solid fa-shapes"></i></a>
+                    <a href="mailto:chhinchuschool@gmail.com" aria-label="Email School"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+97783540234" aria-label="Call School"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About CEBS (Est. 2042)</a></li>
+                    <li><a href="#montessori-wing">CEBS Montessori</a></li>
+                    <li><a href="#legacy">Karnali Best School Award</a></li>
+                    <li><a href="#news">Notices &amp; Calendar</a></li>
+                    <li><a href="#result-checker">Check Results</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+                <h4>Academic Streams</h4>
+                <ul>
+                    <li><a href="#programs">CEBS Montessori (Nursery–UKG)</a></li>
+                    <li><a href="#programs">Secondary / SEE (Grades 1–10)</a></li>
+                    <li><a href="#programs">+2 Science (NEB)</a></li>
+                    <li><a href="#programs">+2 Management (NEB)</a></li>
+                    <li><a href="#programs">+2 Law &amp; +2 Education</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot footer-contact-icon"></i> Bheriganga Municipality-12, Chhinchu, Surkhet, Karnali Province, Nepal</li>
+                    <li><i class="fa-solid fa-user-tie footer-contact-icon"></i> Principal: Purushotam Timalsena</li>
+                    <li><i class="fa-solid fa-phone footer-contact-icon"></i> <a href="tel:+97783540234">+977 83-540234</a></li>
+                    <li><i class="fa-solid fa-envelope footer-contact-icon"></i> <a href="mailto:chhinchuschool@gmail.com">chhinchuschool@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p>&copy; <span id="year-now">2026</span> Chhinchu English Boarding School (CEBS) &amp; CEBS Montessori. All Rights Reserved.</p>
+            <p>Bheriganga-12, Surkhet &bull; <a href="https://www.facebook.com/CEBSNepal" target="_blank" rel="noopener noreferrer" style="color: var(--color-gold); text-decoration: none;">facebook.com/CEBSNepal</a></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button type="button" id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ==========================================================
+         INTERACTIVE MODALS (NOTICE / ADMISSION / TOUR / LIGHTBOX)
+         ========================================================== -->
+
+    <!-- Official Notice Modal -->
+    <div class="modal-backdrop" id="notice-modal" role="dialog" aria-modal="true" aria-labelledby="notice-modal-title">
+        <div class="modal-box">
+            <button type="button" class="modal-close js-close-modal" aria-label="Close Notice">&times;</button>
+            <span id="notice-modal-date" style="color: var(--color-gold); font-size: 0.82rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;"></span>
+            <h3 id="notice-modal-title" style="font-size: 1.65rem; color: var(--color-heading); margin: 8px 0 16px;"></h3>
+            <div id="notice-modal-body" style="color: var(--color-text-muted); line-height: 1.75; font-size: 0.95rem;"></div>
+            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--color-border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <span id="notice-modal-signer" style="font-weight: 600; color: var(--color-heading); font-size: 0.9rem;"></span>
+                <button type="button" class="btn-premium btn-solid js-open-admission" style="padding: 9px 22px; font-size: 0.85rem;">Inquire / Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admission & Boarding Inquiry Modal -->
+    <div class="modal-backdrop" id="admission-modal" role="dialog" aria-modal="true" aria-labelledby="admission-modal-title">
+        <div class="modal-box">
+            <button type="button" class="modal-close js-close-modal" aria-label="Close Inquiry Form">&times;</button>
+            <span style="color: var(--color-gold); font-size: 0.8rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">Admission Desk &bull; Chhinchu, Surkhet</span>
+            <h3 id="admission-modal-title" style="font-size: 1.75rem; color: var(--color-heading); margin: 6px 0 18px;">Admission &amp; Hostel Inquiry</h3>
+            <form id="admission-inquiry-form">
+                <div class="result-form-grid">
+                    <div class="form-group">
+                        <label for="inq-name">Student / Guardian Name *</label>
+                        <input type="text" id="inq-name" required placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inq-phone">Contact Phone *</label>
+                        <input type="tel" id="inq-phone" required placeholder="98XXXXXXXX / 083-XXXXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="inq-program">Program / Grade *</label>
+                        <select id="inq-program" required>
+                            <option value="CEBS Montessori (Nursery–UKG)">CEBS Montessori (Nursery–UKG)</option>
+                            <option value="Primary / Basic (Grades 1–5)">Primary / Basic (Grades 1–5)</option>
+                            <option value="Secondary / SEE (Grades 6–10)">Secondary / SEE (Grades 6–10)</option>
+                            <option value="+2 Science">+2 Science (NEB Grade 11–12)</option>
+                            <option value="+2 Management">+2 Management (NEB Grade 11–12)</option>
+                            <option value="+2 Law">+2 Law (NEB Grade 11–12)</option>
+                            <option value="+2 Education">+2 Education (NEB Grade 11–12)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="inq-boarding">Attendance Option *</label>
+                        <select id="inq-boarding" required>
+                            <option value="Day Scholar">Day Scholar (Chhinchu / Local)</option>
+                            <option value="Residential Boarding / Hostel">Residential Boarding / Hostel</option>
+                        </select>
+                    </div>
+                    <div class="form-group full">
+                        <label for="inq-msg">Notes / Scholarship Query</label>
+                        <textarea id="inq-msg" rows="3" placeholder="Share previous school, SEE GPA (for +2), or boarding questions..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn-premium btn-solid" style="width: 100%;">Submit Admission Inquiry</button>
+            </form>
+            <div id="admission-feedback" class="result-output" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <!-- Campus Tour & Facilities Modal -->
+    <div class="modal-backdrop" id="tour-modal" role="dialog" aria-modal="true" aria-labelledby="tour-modal-title">
+        <div class="modal-box">
+            <button type="button" class="modal-close js-close-modal" aria-label="Close Campus Overview">&times;</button>
+            <span style="color: var(--color-gold); font-size: 0.8rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">Bheriganga-12, Chhinchu, Surkhet</span>
+            <h3 id="tour-modal-title" style="font-size: 1.75rem; color: var(--color-heading); margin: 6px 0 16px;">CEBS Campus &amp; Hostel Overview</h3>
+            <img src="images/hero-cebs-campus.jpg" alt="Chhinchu English Boarding School campus" style="width: 100%; height: 220px; object-fit: cover; margin-bottom: 16px; border-radius: 4px;">
+            <p style="color: var(--color-text-muted); line-height: 1.7; font-size: 0.94rem; margin-bottom: 14px;">Established in 2042 B.S. (1985 A.D.), <strong>Chhinchu English Boarding School (CEBS)</strong> &amp; <strong>CEBS Montessori</strong> serve families from Surkhet and surrounding hill districts with unified Nursery–12 academics.</p>
+            <ul style="list-style: none; color: var(--color-text-main); font-size: 0.91rem; line-height: 1.9; margin-bottom: 18px;">
+                <li><i class="fa-solid fa-shapes" style="color: var(--color-gold); width: 22px;"></i> Dedicated CEBS Montessori wing for early childhood learning</li>
+                <li><i class="fa-solid fa-flask" style="color: var(--color-gold); width: 22px;"></i> +2 Science, Computer IT Lab, Library &amp; Moot / Seminar spaces</li>
+                <li><i class="fa-solid fa-bed" style="color: var(--color-gold); width: 22px;"></i> Supervised residential hostel &amp; boarding care</li>
+                <li><i class="fa-solid fa-phone" style="color: var(--color-gold); width: 22px;"></i> Office Helpline: +977 83-540234</li>
+            </ul>
+            <a href="https://www.facebook.com/CEBSNepal" target="_blank" rel="noopener noreferrer" class="btn-premium btn-solid" style="width: 100%;">Follow CEBS on Facebook</a>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="modal-backdrop" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+        <div class="modal-box" style="max-width: 840px; padding: 24px;">
+            <button type="button" class="modal-close js-close-modal" aria-label="Close Lightbox">&times;</button>
+            <img id="lightbox-img" class="lightbox-img" src="images/hero-cebs-campus.jpg" alt="CEBS Gallery preview">
+            <div class="lightbox-controls">
+                <button type="button" class="btn-premium" id="lightbox-prev" style="padding: 8px 18px;"><i class="fa-solid fa-arrow-left"></i> Prev</button>
+                <p id="lightbox-caption" style="font-size: 0.92rem; color: var(--color-heading); text-align: center; font-weight: 500;"></p>
+                <button type="button" class="btn-premium" id="lightbox-next" style="padding: 8px 18px;">Next <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Standalone Vanilla JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
